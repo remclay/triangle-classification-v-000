@@ -7,12 +7,12 @@ class Triangle
   end
 
   def kind
-    :equilateral
-    # side_1 == side_2 == side_3
-    :isosceles
-    # side_1 == side_2 || side_2 == side_3 || side_1 == side_3
-    :scalene
-    # side_1 != side_2 != side_3 != side_1
+    if side_1 == side_2 == side_3
+      :equilateral
+    elsif side_1 == side_2 || side_2 == side_3 || side_1 == side_3
+      :isosceles
+    elsif side_1 != side_2 != side_3 != side_1
+      :scalene
   end
 end
 
