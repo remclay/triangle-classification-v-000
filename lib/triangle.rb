@@ -23,8 +23,7 @@ class Triangle
     end
   end
 
-end #end Triangle class
+end
 
 class TriangleError < StandardError
- # triangle error code
 end
